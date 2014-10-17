@@ -6,4 +6,8 @@ AC_CONFIG_FILES([ po/Makefile.in
  Makefile
  src/Makefile
 ])
+
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION(0.18)
+
 AC_OUTPUT
