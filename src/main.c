@@ -1,6 +1,7 @@
 #include <config.h>
 #include <stdio.h>
 #include "gettext.h"
+#define _(String) gettext (String)
 
 int
 main (void)
@@ -9,6 +10,6 @@ main (void)
   bindtextdomain (PACKAGE, LOCALEDIR);
   textdomain (PACKAGE);
 
-  puts ("Hello World!");
+  puts (_("Hello World!"));
   return 0;
 }
